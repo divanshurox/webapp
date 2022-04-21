@@ -23,5 +23,10 @@ pipeline {
                 }
             }
         }
+        stage('Deploy') {
+            steps {
+                bat '/var/deployment/./deployment.sh'
+            }
+        }
     }
 }
