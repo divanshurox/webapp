@@ -23,10 +23,5 @@ pipeline {
                 }
             }
         }
-        stage('Deploy') {
-            steps {
-                sh '/var/deployment/./deployment.sh'
-            }
-        }
     }
 }
