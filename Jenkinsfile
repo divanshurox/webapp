@@ -23,5 +23,10 @@ pipeline {
                 }
             }
         }
+        stage('Deploy'){
+            steps {
+                bat "E:\jenkintut\webapp\deployment.bat"
+            }
+        }
     }
 }
